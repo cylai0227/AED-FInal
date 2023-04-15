@@ -77,7 +77,11 @@ public class Organization {
         Organization.count = count;
     }
 
-    public class OrganizationType {
+    public OrganizationType getOrganizationType() {
+        return new OrganizationType();
+    }
+
+    public class OrganizationType{
 
         public static final String ADMIN = "Admin Organization";
         public static final String DOCTOR = "Doctor Organization";
@@ -87,5 +91,38 @@ public class Organization {
         public static final String GOVERNMENT_FINANCIAL_OFFICIAL = "Government Financial Official Organization";
         public static final String GOVERNMENT_HEALTH_OFFICIAL = "Government Health Official Organization";
         public static final String PHARMACY_MANAGER = "Phmarmacy Manager Organization";
+
+        public static String getADMIN() {
+            return ADMIN;
+        }
+
+        public static String getDOCTOR() {
+            return DOCTOR;
+        }
+
+        public static String getPATIENT() {
+            return PATIENT;
+        }
+
+        public static String getACCOUNTANT() {
+            return ACCOUNTANT;
+        }
+
+        public static String getINSURANCE_AGENT() {
+            return INSURANCE_AGENT;
+        }
+
+        public static String getGOVERNMENT_FINANCIAL_OFFICIAL() {
+            return GOVERNMENT_FINANCIAL_OFFICIAL;
+        }
+
+        public static String getGOVERNMENT_HEALTH_OFFICIAL() {
+            return GOVERNMENT_HEALTH_OFFICIAL;
+        }
+
+        public static String getPHARMACY_MANAGER() {
+            return PHARMACY_MANAGER;
+        }
+
     }
 }
