@@ -8,10 +8,10 @@ package Organization;
  *
  * @author whh
  */
-public class Patient_organization extends Organization {
+public class Accountant_organization extends Organization {
 
-    public Patient_organization() {
+    public Accountant_organization() {
         Organization.OrganizationType type = getOrganizationType();
-        String admin_type = type.getPATIENT();
+        String accountant_type = type.getACCOUNTANT();
     }
 }
