@@ -27,7 +27,7 @@ public class Organization_Dicrectory {
         this.organizationList = organizationList;
     }
 
-    public Organization getOrganization(OrganizationType organizationName) {
+    public Organization CreateOrganization(OrganizationType organizationName) {
         for (Organization organization : organizationList) {
             if (organization.getOrganizationType().equals(OrganizationType.getACCOUNTANT()) || organization.getOrganizationType().equals(OrganizationType.getADMIN()) || organization.getOrganizationType().equals(OrganizationType.getDOCTOR()) || organization.getOrganizationType().equals(OrganizationType.getGOVERNMENT_FINANCIAL_OFFICIAL()) || organization.getOrganizationType().equals(OrganizationType.getGOVERNMENT_HEALTH_OFFICIAL()) || organization.getOrganizationType().equals(OrganizationType.getINSURANCE_AGENT()) || organization.getOrganizationType().equals(OrganizationType.getPATIENT()) || organization.getOrganizationType().equals(OrganizationType.getPHARMACY_MANAGER())) {
                 organizationList.add(organization);

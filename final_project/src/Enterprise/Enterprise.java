@@ -11,20 +11,58 @@ import Organization.Organization_Dicrectory;
  *
  * @author whh
  */
-public class Enterprise extends Organization{
+public class Enterprise extends Organization {
+
     private String enterpriseAddress;
     private String enterpriseEmail;
     private Type enterpriseTypes;
     private Organization_Dicrectory organizationDicrectory;
-    
-    public Enterprise(){
+
+    public Enterprise() {
         this.enterpriseAddress = enterpriseAddress;
         this.enterpriseEmail = enterpriseEmail;
         this.enterpriseTypes = new Type();
         this.organizationDicrectory = new Organization_Dicrectory();
     }
-    
-    public class Type{
+
+    public String getEnterpriseAddress() {
+        return enterpriseAddress;
+    }
+
+    public void setEnterpriseAddress(String enterpriseAddress) {
+        this.enterpriseAddress = enterpriseAddress;
+    }
+
+    public String getEnterpriseEmail() {
+        return enterpriseEmail;
+    }
+
+    public void setEnterpriseEmail(String enterpriseEmail) {
+        this.enterpriseEmail = enterpriseEmail;
+    }
+
+    public Type getEnterpriseTypes() {
+        return enterpriseTypes;
+    }
+
+    public void setEnterpriseTypes(Type enterpriseTypes) {
+        this.enterpriseTypes = enterpriseTypes;
+    }
+
+    public Organization_Dicrectory getOrganizationDicrectory() {
+        return organizationDicrectory;
+    }
+
+    public void setOrganizationDicrectory(Organization_Dicrectory organizationDicrectory) {
+        this.organizationDicrectory = organizationDicrectory;
+    }
+
+    public Type getEnterpriseType() {
+        return new Type();
+    }
+
+    public class Type {
+
         public static final String GOVERNMENT = "Government";
         public static final String INSURANCE = "insurance";
         public static final String PHARMACY = "Pharmacy";
@@ -45,7 +83,6 @@ public class Enterprise extends Organization{
         public static String getHOSPITAL() {
             return HOSPITAL;
         }
-        
-        
+
     }
 }
