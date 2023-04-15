@@ -4,10 +4,15 @@
  */
 package Enterprise;
 
+import Organization.Organization;
+
 /**
  *
  * @author whh
  */
-public class Enterprise {
-    
+public class Enterprise extends Organization{
+    private String enterpriseAddress;
+    private String enterpriseEmail;
+    private Type enterpriseType;
+    private 
 }
