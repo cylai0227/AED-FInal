@@ -90,7 +90,7 @@ public class Organization {
         public static final String INSURANCE_AGENT = "Insurance Agent Organization";
         public static final String GOVERNMENT_FINANCIAL_OFFICIAL = "Government Financial Official Organization";
         public static final String GOVERNMENT_HEALTH_OFFICIAL = "Government Health Official Organization";
-        public static final String PHARMACY_MANAGER = "Phmarmacy Manager Organization";
+        public static final String PHARMACY_MANAGER = "Pharmacy Manager Organization";
 
         public static String getADMIN() {
             return ADMIN;
