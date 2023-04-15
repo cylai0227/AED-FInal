@@ -84,9 +84,9 @@ public class Organization {
     public class OrganizationType{
 
         public static final String ADMIN = "Admin Organization";
-        public static final String DOCTOR = "Doctor Organization";
+        public static final String DOCTOR = "Hospital Doctor Organization";
         public static final String PATIENT = "Patient Organization";
-        public static final String ACCOUNTANT = "Accountant Organization";
+        public static final String ACCOUNTANT = "Hopsital Accountant Organization";
         public static final String INSURANCE_AGENT = "Insurance Agent Organization";
         public static final String GOVERNMENT_FINANCIAL_OFFICIAL = "Government Financial Official Organization";
         public static final String GOVERNMENT_HEALTH_OFFICIAL = "Government Health Official Organization";
