@@ -29,11 +29,27 @@ public class EnterpriseDirectory {
     }
 
 
-    public Enterprise CreateEnterprise(Type EnterpriseName) {
-        for (Enterprise enterprise : enterpriseList) {
-            if (enterprise.getEnterpriseType().equals(Type.getGOVERNMENT()) || enterprise.getEnterpriseType().equals(Type.getHOSPITAL()) || enterprise.getEnterpriseType().equals(Type.getINSURANCE()) ||  enterprise.getEnterpriseType().equals(Type.getPHARMACY())) {
-                enterpriseList.add(enterprise);
-            }
+    public Enterprise CreateEnterprise(Type EnterpriseName, String enterpriseEmail, String enterpriseAddress) {
+        Enterprise enterprise;
+        if(EnterpriseName == Type.Government) {
+            enterprise = new GovernmentEnterprise(enterpriseEmail, enterpriseAddress);
+            enterpriseList.add(enterprise);
+            return enterprise;     
+        }
+        if(EnterpriseName == Type.Hopital) {
+            enterprise = new HospitalEnterprise(enterpriseEmail, enterpriseAddress);
+            enterpriseList.add(enterprise);
+            return enterprise;     
+        }
+        if(EnterpriseName == Type.Pharmacy) {
+            enterprise = new PharmacyEnterprise(enterpriseEmail, enterpriseAddress);
+            enterpriseList.add(enterprise);
+            return enterprise;     
+        }
+        if(EnterpriseName == Type.Insurance) {
+            enterprise = new InsuranceEnterprise(enterpriseEmail, enterpriseAddress);
+            enterpriseList.add(enterprise);
+            return enterprise;     
         }
         return null;
     }

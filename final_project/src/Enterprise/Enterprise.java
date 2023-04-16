@@ -11,17 +11,17 @@ import Organization.Organization_Dicrectory;
  *
  * @author whh
  */
-public class Enterprise extends Organization {
+public abstract class Enterprise extends Organization {
 
     private String enterpriseAddress;
     private String enterpriseEmail;
     private Type enterpriseTypes;
     private Organization_Dicrectory organizationDicrectory;
 
-    public Enterprise() {
+    public Enterprise(Type type, String enterpriseEmail, String enterpriseAddress) {
         this.enterpriseAddress = enterpriseAddress;
         this.enterpriseEmail = enterpriseEmail;
-        this.enterpriseTypes = new Type();
+        this.enterpriseTypes = type;
         this.organizationDicrectory = new Organization_Dicrectory();
     }
 
@@ -57,32 +57,26 @@ public class Enterprise extends Organization {
         this.organizationDicrectory = organizationDicrectory;
     }
 
-    public Type getEnterpriseType() {
-        return new Type();
-    }
 
-    public class Type {
+    public enum Type { 
+        Government("Government"), 
+        Insurance("Insurance"),
+        Hopital("Hospital"),
+        Pharmacy("Pharmacy");
 
-        public static final String GOVERNMENT = "Government";
-        public static final String INSURANCE = "insurance";
-        public static final String PHARMACY = "Pharmacy";
-        public static final String HOSPITAL = "Hospital";
+        private String value;
 
-        public static String getGOVERNMENT() {
-            return GOVERNMENT;
+        private Type(String value) {
+            this.value = value;
         }
 
-        public static String getINSURANCE() {
-            return INSURANCE;
+        public String getValue() {
+            return value;
         }
 
-        public static String getPHARMACY() {
-            return PHARMACY;
+        @Override
+        public String toString() {
+            return value;
         }
-
-        public static String getHOSPITAL() {
-            return HOSPITAL;
-        }
-
     }
 }
