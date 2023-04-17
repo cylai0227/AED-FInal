@@ -5,6 +5,7 @@
 package Business;
 
 import NetWorkSystem.NetWorkSystem;
+import Organization.Organization;
 import java.util.ArrayList;
 
 /**
@@ -38,7 +39,5 @@ public class EcoSystem extends Organization{
     public void setNetworkSystem(ArrayList<NetWorkSystem> networkSystem) {
         this.networkSystem = networkSystem;
     }
-    public boolean checkUniques(String username){
-        for(Organization o: this.getaccountDirectory())
-    }
+
 }
