@@ -16,23 +16,25 @@ public abstract class WorkRequest {
     private String message;
     private Account sender;
     private Account receiver;
-    private ArrayList<WorkDetail> workDetail;
+    private String status;
+    
     
     public WorkRequest(){
         workId++;
         this.message = message;
         this.sender = sender;
         this.receiver = receiver;
-        this.workDetail = new ArrayList<>();
+        this.status = status;
     }
 
-    public ArrayList<WorkDetail> getWorkDetail() {
-        return workDetail;
+    public String getStatus() {
+        return status;
     }
 
-    public void setWorkDetail(ArrayList<WorkDetail> workDetail) {
-        this.workDetail = workDetail;
+    public void setStatus(String status) {
+        this.status = status;
     }
+
 
     public static int getWorkId() {
         return workId;
