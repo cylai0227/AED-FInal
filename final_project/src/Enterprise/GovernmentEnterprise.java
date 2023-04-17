@@ -16,8 +16,9 @@ public class GovernmentEnterprise extends Enterprise {
     public GovernmentEnterprise(String enterpriseEmail, String enterpriseAddress) {
         super(Type.Government, enterpriseEmail, enterpriseAddress);
     }
+    
     @Override
-    public ArrayList<Role> getSupportedEnterpriseList(){
+    public ArrayList<Role> getSupportedEnterpriseRole(){
         return null;
     }
 }
