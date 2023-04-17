@@ -6,17 +6,18 @@ package Organization;
 
 import Account.AccountDirectory;
 import Employee.EmployeeDirectory;
-import Job.Job;
+import WorkRequest.WorkQueue;
+import WorkRequest.WorkRequest;
 
 /**
  *
  * @author whh
  */
-public class Organization {
+public abstract class Organization {
 
     private String organizationName;
     private int organizationId;
-    private Job job;
+    private WorkQueue job;
     private AccountDirectory accountDirectory;
     private EmployeeDirectory employeeDirectory;
     private static int count = 0;
@@ -24,7 +25,7 @@ public class Organization {
     public Organization() {
         this.organizationId = this.count++;
         this.organizationName = organizationName;
-        this.job = new Job();
+        this.job = new WorkQueue();
         this.accountDirectory = new AccountDirectory();
         this.employeeDirectory = new EmployeeDirectory();
     }
@@ -45,13 +46,17 @@ public class Organization {
         this.organizationId = organizationId;
     }
 
-    public Job getJob() {
+    public WorkQueue getJob() {
         return job;
     }
 
-    public void setJob(Job job) {
+    public void setJob(WorkQueue job) {
         this.job = job;
     }
+
+ 
+
+
 
     public AccountDirectory getAccountDirectory() {
         return accountDirectory;

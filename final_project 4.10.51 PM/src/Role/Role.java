@@ -5,7 +5,7 @@
 package Role;
 
 import Account.Account;
-import EcoSystem.EcoSystem;
+import Business.EcoSystem;
 import Enterprise.Enterprise;
 import Organization.Organization;
 import javax.swing.JFrame;

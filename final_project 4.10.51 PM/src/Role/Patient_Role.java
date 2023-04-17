@@ -5,7 +5,7 @@
 package Role;
 
 import Account.Account;
-import EcoSystem.EcoSystem;
+import Business.EcoSystem;
 import Enterprise.Enterprise;
 import Organization.Organization;
 import javax.swing.JFrame;
@@ -16,9 +16,11 @@ import javax.swing.JFrame;
  */
 public class Patient_Role extends Role{
 
+
     @Override
     public JFrame createWorkArea(Account account, Organization organization, Enterprise enterprise, EcoSystem ecoSystem) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+
     
 }

@@ -5,7 +5,7 @@
 package Role;
 
 import Account.Account;
-import EcoSystem.EcoSystem;
+import Business.EcoSystem;
 import Enterprise.Enterprise;
 import Organization.Organization;
 import javax.swing.JFrame;
@@ -15,6 +15,7 @@ import javax.swing.JFrame;
  * @author whh
  */
 public class Accountant_Role extends Role{
+
 
     @Override
     public JFrame createWorkArea(Account account, Organization organization, Enterprise enterprise, EcoSystem ecoSystem) {

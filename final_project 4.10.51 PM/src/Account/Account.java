@@ -5,9 +5,10 @@
 package Account;
 
 import Employee.Employee;
-import Job.Job;
 import Patient.Patient;
 import Role.Role;
+import WorkRequest.WorkQueue;
+import WorkRequest.WorkRequest;
 
 /**
  *
@@ -18,11 +19,11 @@ public class Account {
     private String password;
     private Employee employee;
     private Patient customer;
-    private Job job;
+    private WorkQueue job;
     private Role role;
 
     public Account() {
-        this.job = new Job();
+        this.job = new WorkQueue();
     }
 
     public String getUsername() {
@@ -57,9 +58,15 @@ public class Account {
         this.customer = customer;
     }
 
-    public Job getJob() {
+    public WorkQueue getJob() {
         return job;
     }
+
+    public void setJob(WorkQueue job) {
+        this.job = job;
+    }
+
+
 
     public Role getRole() {
         return role;

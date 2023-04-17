@@ -25,5 +25,12 @@ public class AccountDirectory {
         this.AccountList = AccountList;
     }
     
-    
+    public boolean UsernameUniques(String username){
+        for(Account a : this.getAccountList()){
+            if(a.getUsername() == username){
+                return false;
+            }
+        }
+        return true;
+    }
 }
