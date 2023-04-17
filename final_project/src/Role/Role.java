@@ -24,7 +24,7 @@ public abstract class Role {
     Insurance("Insurance Agent"),
     Government_health("Government Health Official"),
     Government_Financial("Government Financial Official"),
-    Pharmacy("Pharmacy Manager");
+    Pharmacy("Pharmacy Agent");
             private String value;
 
         private Type(String value) {
