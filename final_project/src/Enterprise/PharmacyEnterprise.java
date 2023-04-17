@@ -17,8 +17,10 @@ public class PharmacyEnterprise extends Enterprise {
         super(Type.Pharmacy, enterpriseEmail, enterpriseAddress);
     }
 
+
+
     @Override
-    public ArrayList<Role> getSupportedEnterpriseList() {
+    public ArrayList<Role> getSupportedEnterpriseRole() {
         return null;
     }
 }

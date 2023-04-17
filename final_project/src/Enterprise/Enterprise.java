@@ -6,6 +6,8 @@ package Enterprise;
 
 import Organization.Organization;
 import Organization.Organization_Dicrectory;
+import Role.Role;
+import java.util.ArrayList;
 
 /**
  *
@@ -79,4 +81,5 @@ public abstract class Enterprise extends Organization {
             return value;
         }
     }
+        public abstract ArrayList<Role> getSupportedEnterpriseRole();
 }

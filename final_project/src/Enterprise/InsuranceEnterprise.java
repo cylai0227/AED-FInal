@@ -18,7 +18,8 @@ public class InsuranceEnterprise extends Enterprise {
     }
 
     @Override
-    public ArrayList<Role> getSupportedEnterpriseList() {
+    public ArrayList<Role> getSupportedEnterpriseRole() {
         return null;
     }
+
 }

@@ -18,7 +18,7 @@ public class HospitalEnterprise extends Enterprise {
     }
 
     @Override
-    public ArrayList<Role> getSupportedEnterpriseList() {
+    public ArrayList<Role> getSupportedEnterpriseRole() {
         return null;
     }
 }
