@@ -5,6 +5,7 @@
 package WorkRequest;
 
 import Account.Account;
+import java.util.ArrayList;
 
 /**
  *
@@ -15,12 +16,22 @@ public abstract class WorkRequest {
     private String message;
     private Account sender;
     private Account receiver;
+    private ArrayList<WorkDetail> workDetail;
     
     public WorkRequest(){
         workId++;
         this.message = message;
         this.sender = sender;
         this.receiver = receiver;
+        this.workDetail = new ArrayList<>();
+    }
+
+    public ArrayList<WorkDetail> getWorkDetail() {
+        return workDetail;
+    }
+
+    public void setWorkDetail(ArrayList<WorkDetail> workDetail) {
+        this.workDetail = workDetail;
     }
 
     public static int getWorkId() {
