@@ -10,5 +10,37 @@ package WorkRequest;
  */
 public class WorkDetail {
     private double workPrice;
-    private 
+    private double workNum;
+    private String workType;
+    
+    public WorkDetail(){
+        this.workPrice = workPrice;
+        this.workNum = workNum;
+        this.workType = workType;
+    }
+
+    public double getWorkPrice() {
+        return workPrice;
+    }
+
+    public void setWorkPrice(double workPrice) {
+        this.workPrice = workPrice;
+    }
+
+    public double getWorkNum() {
+        return workNum;
+    }
+
+    public void setWorkNum(double workNum) {
+        this.workNum = workNum;
+    }
+
+    public String getWorkType() {
+        return workType;
+    }
+
+    public void setWorkType(String workType) {
+        this.workType = workType;
+    }
+    
 }
