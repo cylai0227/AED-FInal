@@ -16,11 +16,32 @@ import javax.swing.JFrame;
  */
 public abstract class Role {
 
-    private static String[] roles = {"Admin", "Doctor", "Patient", "Accountant", "Insurance Agent", "Government Health Official", "Government Financial Official", "Pharmacy Manager"};
+    public enum Type{
+    SysAdmin("Admin"),
+    Doctor("Doctor"),
+    Patient("Patient"),
+    Accountant("Accountant"),
+    Insurance("Insurance Agent"),
+    Government_health("Government Health Official"),
+    Government_Financial("Government Financial Official"),
+    Pharmacy("Pharmacy Manager");
+            private String value;
 
-    public static String[] getAllRoles() {
-        return roles;
+        private Type(String value) {
+            this.value = value;
+        }
+
+        public String getValue() {
+            return value;
+        }
+
+        @Override
+        public String toString() {
+            return value;
+        }
     }
+    
+
     
     public abstract JFrame createWorkArea(Account account, Organization organization, Enterprise enterprise, EcoSystem ecoSystem);
 }
